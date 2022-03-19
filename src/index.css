@@ -11,3 +11,130 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body,.App{
+  height: 100vh;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 350px;
+  height: 400px;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+  background-color:#80CBC4;
+}
+
+.header h1{
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.body{
+  flex: 1;
+  color: white;
+  background-color:#90A4AE;
+  padding: 20px 30px;
+  overflow-y: scroll;
+}
+
+.body::-webkit-scrollbar{
+  width:10px;
+  background-color:#90A4AE;
+}
+
+.body::-webkit-scrollbar-thumb{
+  width:10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.mensaje{
+  background-color: #80CBC4;
+  padding: 10px;
+  color: white;
+  width: fit-content;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.mensaje_usuario{
+  margin-left: auto;
+  background-color: white;
+  color: black;
+}
+
+.footer form{
+  display: flex;
+}
+
+.footer form input{
+  width: 35%;
+}
+
+form input{
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  font-size: 16px;
+}
+
+form button{
+  width:100px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #546E7A;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover{
+  background-color: #37474F;
+  transition: 0.2s ease-in-out;
+}
+
+.contactos{
+  width: 220px;
+}
+
+.contactos .header{
+  background-color: #FFB74D;
+}
+
+.contactos .header h1{
+  color: #455A64;
+}
+
+.contactos__body--card{
+  width: 100%;
+  text-align: center;
+  background-color: #FFB74D;
+  color: #455A64;
+  font-size: 1.2rem;
+}
+
+.mensaje span{
+  color: #555;
+  font-size: 10px;
+}
